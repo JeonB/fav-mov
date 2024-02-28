@@ -6,7 +6,7 @@ async function start(): Promise<void> {
     logger: true,
   })
 
-  //app.ts에 작성된 모든 로직이 포함된 범위를 생성
+  // app.ts에 작성된 모든 로직이 포함된 범위를 생성
   await fastify.register(App)
 
   await fastify.listen({

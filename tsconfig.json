@@ -20,5 +20,9 @@
     "lib": ["ESNext"]
   },
   "include": ["src/**/*.ts"],
-  "exclude": [".eslintrc.js"]
+  "exclude": [".eslintrc.js", "seeds/**/*.ts"],
+  "ts-node": {
+    "files": true
+  },
+  "typeRoots": ["./src/types"]
 }

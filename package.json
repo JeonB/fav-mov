@@ -8,7 +8,15 @@
     "dev": "nodemon src/index.ts",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "migrate:make": "knex migrate:make",
+    "migrate:latest": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "migrate:up": "knex migrate:up",
+    "migrate:down": "knex migrate:down",
+    "migrate:list": "knex migrate:list",
+    "seed:make": "knex seed:make",
+    "seed:run": "knex seed:run"
   },
   "keywords": [],
   "author": "",
@@ -20,10 +28,14 @@
     "@fastify/jwt": "^8.0.0",
     "@fastify/sensible": "^5.5.0",
     "@fastify/swagger": "^8.14.0",
+    "@fastify/swagger-ui": "^3.0.0",
     "@fastify/type-provider-typebox": "^4.0.0",
+    "dotenv": "^16.4.5",
     "fastify": "^4.26.1",
     "fastify-cli": "^6.1.1",
-    "fastify-plugin": "^4.5.1"
+    "fastify-plugin": "^4.5.1",
+    "knex": "^3.1.0",
+    "pg": "^8.11.3"
   },
   "devDependencies": {
     "@types/node": "^20.11.20",
