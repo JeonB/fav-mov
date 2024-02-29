@@ -23,7 +23,7 @@ export default async function (
   })
 
   await fastify.register(AutoLoad, {
-    dir: join(__dirname, '.', 'plugins'),
+    dir: join(__dirname, 'plugins'),
     dirNameRoutePrefix: false,
     ignorePattern: /.*.no-load\.js/,
     indexPattern: /^no$/i,
